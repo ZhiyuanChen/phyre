@@ -48,7 +48,7 @@ class build_ext(setuptools.command.build_ext.build_ext):
 
 
 setuptools.setup(name='phyre',
-                 version='0.2.2',
+                 version='0.2.3',
                  author='Facebook AI Research',
                  license='Apache Software License',
                  url='https://phyre.ai',
@@ -70,7 +70,7 @@ setuptools.setup(name='phyre',
                  },
                  packages=['phyre', 'phyre.creator', 'phyre.viz_server'],
                  install_requires=[
-                     'nose', 'numpy', 'tornado', 'thrift==0.11.0', 'imageio',
+                     'nose', 'numpy', 'tornado', 'thrift', 'imageio',
                      'scipy', 'joblib'
                  ],
                  cmdclass={'build_ext': build_ext},
